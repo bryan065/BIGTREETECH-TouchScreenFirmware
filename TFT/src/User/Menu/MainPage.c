@@ -19,6 +19,10 @@ MENUITEMS unifiedPageItems = {
     {ICON_BACK,       LABEL_BACK}}
   };
 
+  if(infoSettings.advancedPause == 1){
+    unifiedPageItems.items[2].label.index = LABEL_FILAMENT;
+  }
+
   KEY_VALUES key_num = KEY_IDLE;
   GUI_SetBkColor(infoSettings.bg_color);
 
@@ -31,7 +35,13 @@ MENUITEMS unifiedPageItems = {
     {
       case KEY_ICON_0: infoMenu.menu[++infoMenu.cur] = menuUnifiedHeat;     break;
       case KEY_ICON_1: infoMenu.menu[++infoMenu.cur] = menuUnifiedMove;     break;
-      case KEY_ICON_2: infoMenu.menu[++infoMenu.cur] = menuExtrude;         break;
+      case KEY_ICON_2:
+          if (infoSettings.advancedPause == 1) {
+            infoMenu.menu[++infoMenu.cur] = menuFilament;
+          } else {
+            infoMenu.menu[++infoMenu.cur] = menuExtrude;
+          }
+        break;
       case KEY_ICON_3: storeCmd("M112\n"); break;     // Emergency Stop : Used for emergency stopping, a reset is required to return to operational mode.
                                                       // it may need to wait for a space to open up in the command queue.
                                                       // Enable EMERGENCY_PARSER in Marlin Firmware for an instantaneous M112 command.

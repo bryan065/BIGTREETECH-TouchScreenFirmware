@@ -146,6 +146,7 @@ void initMachineSetting(void){
   infoMachineSettings.promptSupport           = DISABLED;
   infoMachineSettings.onboard_sd_support      = ENABLED;
   infoMachineSettings.autoReportSDStatus      = DISABLED;
+  infoSettings.advancedPause                  = DISABLED;
 }
 
 void setupMachine(void)

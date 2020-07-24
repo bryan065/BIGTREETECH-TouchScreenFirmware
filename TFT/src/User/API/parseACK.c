@@ -334,6 +334,10 @@ void parseACK(void)
         setParameter(P_CURRENT, E2_STEPPER, ack_value());
         setDualStepperStatus(E_STEPPER, true);
       }
+    // Parse and ADVANCED_PAUSE_FEATURE
+      else if(ack_seen("M603")) {
+        infoSettings.advancedPause = 1;
+      }
     // Parse M115 capability report
 
       else if(ack_seen("FIRMWARE_NAME:Marlin"))

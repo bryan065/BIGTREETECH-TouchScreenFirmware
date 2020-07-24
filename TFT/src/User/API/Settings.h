@@ -123,6 +123,7 @@ typedef struct
   uint16_t  level_feedrate[AXIS_NUM];  // X, Y, Z
   uint16_t  preheat_temp[PREHEAT_COUNT];
   uint16_t  preheat_bed[PREHEAT_COUNT];
+  uint16_t  advancedPause;
 
 }SETTINGS;
 

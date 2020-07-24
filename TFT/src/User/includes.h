@@ -82,6 +82,8 @@
 #include "ledcolor.h"
 #include "Parametersetting.h"
 
+#include "FilamentMenu.h"
+#include  "FilamentChange.h"
 #include "Extrude.h"
 #include "Fan.h"
 #include "SettingsMenu.h"
