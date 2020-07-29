@@ -196,6 +196,7 @@
     #define GR_RETRACT_LENGTH         "Retract length"
     #define GR_RETRACT_SWAP_LENGTH    "Retract swap length"
     #define GR_RETRACT_Z_LIFT         "Z lift on retraction"
+    #define GR_RETRACT_AUTO           "Auto FW Retract"
     #define GR_RECOVER_FEEDRATE       "Recover feedrate"
     #define GR_SWAP_RECOVER_FEEDRATE  "Swap recover feedrate"
     #define GR_RECOVER_LENGTH         "Extra recover length"

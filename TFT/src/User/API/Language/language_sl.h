@@ -196,6 +196,7 @@
     #define SL_RETRACT_LENGTH         "Retract length"
     #define SL_RETRACT_SWAP_LENGTH    "Retract swap length"
     #define SL_RETRACT_Z_LIFT         "Z lift on retraction"
+    #define SL_RETRACT_AUTO           "Auto FW Retract"
     #define SL_RECOVER_FEEDRATE       "Recover feedrate"
     #define SL_SWAP_RECOVER_FEEDRATE  "Swap recover feedrate"
     #define SL_RECOVER_LENGTH         "Extra recover length"

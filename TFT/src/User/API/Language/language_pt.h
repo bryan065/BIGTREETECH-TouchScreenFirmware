@@ -196,6 +196,7 @@
     #define PT_RETRACT_LENGTH         "Retract length"
     #define PT_RETRACT_SWAP_LENGTH    "Retract swap length"
     #define PT_RETRACT_Z_LIFT         "Z lift on retraction"
+    #define PT_RETRACT_AUTO           "Auto FW Retract"
     #define PT_RECOVER_FEEDRATE       "Recover feedrate"
     #define PT_SWAP_RECOVER_FEEDRATE  "Swap recover feedrate"
     #define PT_RECOVER_LENGTH         "Extra recover length"

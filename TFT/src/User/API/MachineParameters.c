@@ -3,7 +3,7 @@
 
 PARAMETERS infoParameters;
 
-const u8 parameter_element_count[PARAMETERS_COUNT] = {5, 5, 5, 5, 3, 3, 3, 4, 4, 1};
+const u8 parameter_element_count[PARAMETERS_COUNT] = {5, 5, 5, 5, 3, 3, 3, 4, 4, 1, 1};
 
 const char *const parameter_Cmd[PARAMETERS_COUNT][STEPPER_COUNT] = {
   {"M92 X%.2f\n",   "M92 Y%.2f\n",  "M92 Z%.2f\n",  "M92 T0 E%.2f\n",  "M92 T1 E%.2f\n"}, //Steps/mm
@@ -15,7 +15,8 @@ const char *const parameter_Cmd[PARAMETERS_COUNT][STEPPER_COUNT] = {
   {"M914 X%.2f\n", "M914 Y%.2f\n", "M914 Z%.2f\n",              NULL,              NULL}, //bump Sensitivity
   {"M207 S%.0f\n", "M207 W%.2f\n", "M207 F%.2f\n",    "M207 Z%.2f\n",              NULL}, //FW retract
   {"M208 S%.0f\n", "M208 W%.0f\n", "M208 F%.2f\n",    "M208 R%.2f\n",              NULL}, //FW retract recover
-  {"M900 K%.2f\n",           NULL,            NULL,             NULL,              NULL}  //Linear Advance
+  {"M900 K%.2f\n",           NULL,            NULL,             NULL,              NULL}, //Linear Advance
+  {"M209 S%.0f\nM503 S0\n",  NULL,            NULL,             NULL,              NULL}  //Auto firmware retract
 };
 
 const VAL_TYPE parameter_val_type[PARAMETERS_COUNT][STEPPER_COUNT] = {
@@ -28,7 +29,8 @@ const VAL_TYPE parameter_val_type[PARAMETERS_COUNT][STEPPER_COUNT] = {
   {VAL_TYPE_NEG_INT,    VAL_TYPE_NEG_INT,   VAL_TYPE_NEG_INT},                                            //bump Sensitivity
   {VAL_TYPE_FLOAT,      VAL_TYPE_FLOAT,     VAL_TYPE_FLOAT,       VAL_TYPE_FLOAT},                        //FW retract
   {VAL_TYPE_INT,        VAL_TYPE_INT,       VAL_TYPE_NEG_FLOAT,   VAL_TYPE_NEG_FLOAT},                    //FW retract recover
-  {VAL_TYPE_FLOAT}                                                                                        //Linear Advance
+  {VAL_TYPE_FLOAT},                                                                                       //Linear Advance
+  {VAL_TYPE_INT}                                                                                          //Auto firmware retract
 };
 
 //Extra teppers current gcode command
@@ -43,7 +45,7 @@ bool dualstepper[TOTAL_AXIS] = {false,false,false,false};
 char *const axisDisplayID[STEPPER_COUNT] = AXIS_DISPLAY_ID;
 
 const LABEL accel_disp_ID[] = {LABEL_PRINT_ACCELERATION, LABEL_RETRACT_ACCELERATION, LABEL_TRAVEL_ACCELERATION};
-const LABEL retract_disp_ID[] = {LABEL_RETRACT_LENGTH, LABEL_RETRACT_SWAP_LENGTH, LABEL_RETRACT_FEEDRATE, LABEL_RETRACT_Z_LIFT};
+const LABEL retract_disp_ID[] = {LABEL_RETRACT_LENGTH, LABEL_RETRACT_SWAP_LENGTH, LABEL_RETRACT_FEEDRATE, LABEL_RETRACT_Z_LIFT, LABEL_RETRACT_AUTO};
 const LABEL recover_disp_ID[] = {LABEL_RECOVER_LENGTH, LABEL_SWAP_RECOVER_LENGTH, LABEL_RECOVER_FEEDRATE, LABEL_SWAP_RECOVER_FEEDRATE};
 
 
@@ -72,6 +74,8 @@ float getParameter(PARAMETER_NAME name, u8 index)
     return infoParameters.FwRecover[index];
   case P_LIN_ADV:
     return infoParameters.LinAdvance[index];
+  case P_FWAUTO:
+    return infoParameters.FwAuto[index];
   default:
     return 0.0f;
   }
@@ -112,6 +116,10 @@ void setParameter(PARAMETER_NAME name, u8 index, float val)
     case P_LIN_ADV:
       infoParameters.LinAdvance[index] = val;
       break;
+    case P_FWAUTO:
+      //val = getOnOff();
+      infoParameters.FwAuto[index] = val;
+      break;
     default:
       break;
     }
@@ -139,6 +147,7 @@ bool getDualstepperStatus(u8 index)
 
 void sendParameterCmd(PARAMETER_NAME para, u8 stepper_index, float Value)
 {
+  //if(para == P_FWAUTO) Value = getOnOff();
   storeCmd(parameter_Cmd[para][stepper_index], Value);
   if (dualstepper[stepper_index] && stepper_index < AXIS_NUM)
     {

@@ -196,6 +196,7 @@
     #define JP_RETRACT_LENGTH         "引き戻し長さ"
     #define JP_RETRACT_SWAP_LENGTH    "交換時の引き戻し長さ"
     #define JP_RETRACT_Z_LIFT         "引き戻し時のz軸上げの高さ"
+    #define JP_RETRACT_AUTO           "Auto FW Retract"
     #define JP_RECOVER_FEEDRATE       "押出速度"
     #define JP_SWAP_RECOVER_FEEDRATE  "交換時の押出速度"
     #define JP_RECOVER_LENGTH         "余分な押し出し長さ"

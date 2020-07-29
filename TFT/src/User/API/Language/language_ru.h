@@ -196,6 +196,7 @@
     #define RU_RETRACT_LENGTH         "Длина"
     #define RU_RETRACT_SWAP_LENGTH    "Длина при смене сопла"
     #define RU_RETRACT_Z_LIFT         "Подъём по Z"
+    #define RU_RETRACT_AUTO           "Auto FW Retract"
     #define RU_RECOVER_FEEDRATE       "Скорость"
     #define RU_SWAP_RECOVER_FEEDRATE  "Скорость при смене сопла"
     #define RU_RECOVER_LENGTH         "Длина"
