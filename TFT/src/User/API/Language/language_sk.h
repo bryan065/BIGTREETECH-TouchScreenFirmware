@@ -216,6 +216,7 @@
     #define SK_RETRACT_LENGTH         "Retract length"
     #define SK_RETRACT_SWAP_LENGTH    "Retract swap length"
     #define SK_RETRACT_Z_LIFT         "Z lift on retraction"
+    #define SK_RETRACT_AUTO           "Auto FW Retract"
     #define SK_RECOVER_FEEDRATE       "Recover feedrate"
     #define SK_SWAP_RECOVER_FEEDRATE  "Swap recover feedrate"
     #define SK_RECOVER_LENGTH         "Extra recover length"

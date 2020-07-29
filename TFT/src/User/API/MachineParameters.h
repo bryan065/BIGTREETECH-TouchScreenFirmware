@@ -16,6 +16,7 @@ P_FWRETRACT,
 P_FWRECOVER,
 P_LIN_ADV,
 P_ABL_STATE,
+P_FWAUTO,
 // Keep below items always at the end
 P_RESET_SETTINGS,
 P_RESTORE_SETTINGS,
@@ -55,6 +56,7 @@ float FwRetract[4];
 float FwRecover[4];
 float LinAdvance[1];
 float ABLState[2];
+float FwAuto[1];
 }PARAMETERS;
 
 extern PARAMETERS infoParameters;

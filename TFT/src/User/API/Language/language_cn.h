@@ -216,6 +216,7 @@
     #define CN_RETRACT_LENGTH         "FW回抽长度"
     #define CN_RETRACT_SWAP_LENGTH    "换料时回抽的长度"
     #define CN_RETRACT_Z_LIFT         "回抽时Z轴抬升的高度"
+    #define CN_RETRACT_AUTO           "Auto FW Retract"
     #define CN_RECOVER_FEEDRATE       "FW挤出速度"
     #define CN_SWAP_RECOVER_FEEDRATE  "换料时挤出的速度"
     #define CN_RECOVER_LENGTH         "额外挤出的长度"

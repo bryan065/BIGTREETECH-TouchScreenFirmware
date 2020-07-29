@@ -216,6 +216,7 @@
     #define CZ_RETRACT_LENGTH         "Retract length"
     #define CZ_RETRACT_SWAP_LENGTH    "Retract swap length"
     #define CZ_RETRACT_Z_LIFT         "Z lift on retraction"
+    #define CZ_RETRACT_AUTO           "Auto FW Retract"
     #define CZ_RECOVER_FEEDRATE       "Recover feedrate"
     #define CZ_SWAP_RECOVER_FEEDRATE  "Swap recover feedrate"
     #define CZ_RECOVER_LENGTH         "Extra recover length"

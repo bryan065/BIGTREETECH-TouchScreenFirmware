@@ -216,6 +216,7 @@
     #define DU_RETRACT_LENGTH         "Retract length"
     #define DU_RETRACT_SWAP_LENGTH    "Retract swap length"
     #define DU_RETRACT_Z_LIFT         "Z lift on retraction"
+    #define DU_RETRACT_AUTO           "Auto FW Retract"
     #define DU_RECOVER_FEEDRATE       "Recover feedrate"
     #define DU_SWAP_RECOVER_FEEDRATE  "Swap recover feedrate"
     #define DU_RECOVER_LENGTH         "Extra recover length"

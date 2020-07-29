@@ -216,6 +216,7 @@
     #define IT_RETRACT_LENGTH         "Retract length"
     #define IT_RETRACT_SWAP_LENGTH    "Retract swap length"
     #define IT_RETRACT_Z_LIFT         "Z lift on retraction"
+    #define IT_RETRACT_AUTO           "Auto FW Retract"
     #define IT_RECOVER_FEEDRATE       "Recover feedrate"
     #define IT_SWAP_RECOVER_FEEDRATE  "Swap recover feedrate"
     #define IT_RECOVER_LENGTH         "Extra recover length"

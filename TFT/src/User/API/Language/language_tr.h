@@ -216,6 +216,7 @@
     #define TR_RETRACT_LENGTH         "Retract length"
     #define TR_RETRACT_SWAP_LENGTH    "Retract swap length"
     #define TR_RETRACT_Z_LIFT         "Z lift on retraction"
+    #define TR_RETRACT_AUTO           "Auto FW Retract"
     #define TR_RECOVER_FEEDRATE       "Recover feedrate"
     #define TR_SWAP_RECOVER_FEEDRATE  "Swap recover feedrate"
     #define TR_RECOVER_LENGTH         "Extra recover length"
