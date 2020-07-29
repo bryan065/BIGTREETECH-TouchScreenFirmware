@@ -85,6 +85,7 @@ void menuShowParameter(void){
     case P_ABL_STATE:
       setDynamicLabel(0, "S");
       setDynamicLabel(1, "Z");
+      break;
     case P_FWAUTO:
       parameter_menuitems.items[i].titlelabel = retract_disp_ID[4];
       break;
