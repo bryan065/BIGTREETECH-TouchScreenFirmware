@@ -208,6 +208,7 @@
     #define HU_CUSTOM_SECONDS         "Egyedi"
     #define HU_ST7920_FULLSCREEN      "Nagyképernyős Marlin mód"
     #define HU_PLR_EN                 "Power loss recovery"
+    #define HU_SETTING_SAVE           "Save settings"
     #define HU_SETTING_RESET          "Beállítás visszaállítása"
     #define HU_SETTING_RESTORE        "Beállítások újratöltése"
     #define HU_EEPROM_SAVE_INFO       "Nyomtató beállítások mentése\nto EEPROM-ba?"

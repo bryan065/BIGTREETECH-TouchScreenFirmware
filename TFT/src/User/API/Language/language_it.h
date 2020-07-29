@@ -208,6 +208,7 @@
     #define IT_CUSTOM_SECONDS         "Custom"
     #define IT_ST7920_FULLSCREEN      "Marlin mode in fullscreen"
     #define IT_PLR_EN                 "Power loss recovery"
+    #define IT_SETTING_SAVE           "Save settings"
     #define IT_SETTING_RESET          "Reset settings"
     #define IT_SETTING_RESTORE        "Restore settings"
     #define IT_EEPROM_SAVE_INFO       "Save printer settings\nto EEPROM?"

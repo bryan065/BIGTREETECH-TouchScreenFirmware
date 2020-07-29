@@ -208,6 +208,7 @@
     #define SK_CUSTOM_SECONDS         "Custom"
     #define SK_ST7920_FULLSCREEN      "Marlin mode in fullscreen"
     #define SK_PLR_EN                 "Power loss recovery"
+    #define SK_SETTING_SAVE           "Save settings"
     #define SK_SETTING_RESET          "Reset settings"
     #define SK_SETTING_RESTORE        "Restore settings"
     #define SK_EEPROM_SAVE_INFO       "Save printer settings\nto EEPROM?"

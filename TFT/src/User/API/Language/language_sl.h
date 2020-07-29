@@ -208,6 +208,7 @@
     #define SL_CUSTOM_SECONDS         "Po meri"
     #define SL_ST7920_FULLSCREEN      "Marlin čez cel zaslon"
     #define SL_PLR_EN                 "Power loss recovery"
+    #define SL_SETTING_SAVE           "Save settings"
     #define SL_SETTING_RESET          "Reset nastavitev"
     #define SL_SETTING_RESTORE        "Obnovi nastavitve"
     #define SL_EEPROM_SAVE_INFO       "Shrani nastavitve tiskalnika\nv EEPROM?"
