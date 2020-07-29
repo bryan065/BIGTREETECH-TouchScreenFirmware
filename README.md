@@ -10,8 +10,14 @@ Firmware for BigTreeTech's dual-mode touchscreen 3D printer controllers
 # Customized Firmware
 
 Customized firmware for personal use with the following changes so far:
-- Added UBL specific features & menu (https://github.com/bigtreetech/BIGTREETECH-TouchScreenFirmware/pull/863)
-- Added Auto Firmware Retract into Machine Parameters
-- Changed some wording to be more user friendly
-  - "Features" to "TFT" to differentiate between "Machine" settings & "TFT" settings/features
-- Added Save EEPROM button to machine parameters menu
+- [x] Add UBL specific features & menu (https://github.com/bigtreetech/BIGTREETECH-TouchScreenFirmware/pull/863)
+  - [ ] Add preheat option for hold/cold bed leveling
+  - [ ] Add print mesh validation option
+  - [ ] Possibly add UBL mesh editing function similar to Marlin LCD
+- [x] Add Auto Firmware Retract into Machine Parameters
+- [x] Change some wording to be more user friendly
+  - [x] "Features" to "TFT" to differentiate between "Machine" settings & "TFT" settings/features
+  - [x] "Decrease" & "Increase" for nozzle offsets changed to "down" & "up" with matching icon
+- [x] Add save settings (EEPROM) button to machine parameters menu
+- [ ] Add filament change menu (M600, M701, M702) with preheat options
+  - [ ] Add filament detection state
