@@ -12,5 +12,5 @@ Firmware for BigTreeTech's dual-mode touchscreen 3D printer controllers
 Customized firmware for personal use with the following changes so far:
 - Added UBL specific features & menu (https://github.com/bigtreetech/BIGTREETECH-TouchScreenFirmware/pull/863)
 - Added Auto Firmware Retract into Machine Parameters
-
-
+- Changed some wording to be more user friendly
+  - "Features" to "TFT" to differentiate between "Machine" settings & "TFT" settings/features
