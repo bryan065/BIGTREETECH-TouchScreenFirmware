@@ -21,3 +21,4 @@ Customized firmware for personal use with the following changes so far:
 - [x] Add save settings (EEPROM) button to machine parameters menu
 - [ ] Add filament change menu (M600, M701, M702) with preheat options
   - [ ] Add filament detection state
+- [ ] Add new unified theme similar to the Biqu Thunder (cleaner looking)
