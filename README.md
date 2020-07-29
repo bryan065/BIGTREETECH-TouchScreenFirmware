@@ -14,3 +14,4 @@ Customized firmware for personal use with the following changes so far:
 - Added Auto Firmware Retract into Machine Parameters
 - Changed some wording to be more user friendly
   - "Features" to "TFT" to differentiate between "Machine" settings & "TFT" settings/features
+- Added Save EEPROM button to machine parameters menu
