@@ -11,7 +11,7 @@
     #define EN_SETTINGS               "Settings"
     #define EN_SCREEN_SETTINGS        "Screen"
     #define EN_MACHINE_SETTINGS       "Machine"
-    #define EN_FEATURE_SETTINGS       "Feature"
+    #define EN_FEATURE_SETTINGS       "TFT"
     #define EN_SILENT_ON              "Sound Off"
     #define EN_SILENT_OFF             "Sound On"
     #define EN_SHUT_DOWN              "Shut Down"
