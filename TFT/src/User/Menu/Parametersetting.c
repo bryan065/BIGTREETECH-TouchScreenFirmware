@@ -22,9 +22,9 @@ const LISTITEM parametertypes[P_ITEMSCOUNT] = {
   {ICONCHAR_SETTING1,   LIST_MOREBUTTON,  LABEL_ABL,              LABEL_BACKGROUND},
   {ICONCHAR_SETTING1,   LIST_MOREBUTTON,  LABEL_RETRACT_AUTO,     LABEL_BACKGROUND},
   //Keep below items always at the end
-  {ICONCHAR_SAVE,       LIST_LABEL,       LABEL_SETTING_SAVE,    LABEL_BACKGROUND},
-  {ICONCHAR_RESET,      LIST_LABEL,       LABEL_SETTING_RESET,    LABEL_BACKGROUND},
-  {ICONCHAR_UNDO,       LIST_LABEL,       LABEL_SETTING_RESTORE,  LABEL_BACKGROUND},
+  {ICONCHAR_SAVE,       LIST_LABEL,       LABEL_SETTING_SAVE,     LABEL_BACKGROUND},
+  {ICONCHAR_UNDO,      LIST_LABEL,       LABEL_SETTING_RESET,    LABEL_BACKGROUND},
+  {ICONCHAR_RESET,       LIST_LABEL,       LABEL_SETTING_RESTORE,  LABEL_BACKGROUND},
 };
 
 LISTITEMS parameterMainItems = {
@@ -88,7 +88,8 @@ void menuShowParameter(void){
       setDynamicLabel(1, "Z");
       break;
     case P_FWAUTO:
-      parameter_menuitems.items[i].titlelabel = retract_disp_ID[4];
+      //parameter_menuitems.items[i].titlelabel = retract_disp_ID[4];
+      setDynamicLabel(0, "AFR Enable");
       break;
 
     default:

@@ -704,7 +704,7 @@ void sendQueueCmd(void)
             if(cmd_value()==0) storeCmd("M117 ABL inactive\n");
             else storeCmd("M117 ABL active\n");
           }
-          if(cmd_seen('Z')) setParameter(P_ABL_STATE,1,cmd_float());
+          if(cmd_seen('Z')) setParameter(P_ABL_STATE,1,cmd_value());
         break;
 
         #ifdef NOZZLE_PAUSE_M601
