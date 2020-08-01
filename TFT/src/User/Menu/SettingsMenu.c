@@ -154,7 +154,7 @@ void menuSettings(void)
   KEY_VALUES key_num = KEY_IDLE;
 
   menuDrawPage(&settingsItems);
-
+  mustStoreCmd("M503\n");
   while(infoMenu.menu[infoMenu.cur] == menuSettings)
   {
     key_num = menuKeyGetValue();
