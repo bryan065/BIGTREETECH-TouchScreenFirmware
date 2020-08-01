@@ -210,7 +210,7 @@
     #define EN_PLR_EN                 "Power loss recovery"
     #define EN_SETTING_SAVE           "Save settings"
     #define EN_SETTING_RESET          "Reset settings"
-    #define EN_SETTING_RESTORE        "Restore settings"
+    #define EN_SETTING_RESTORE        "Restore defaults"
     #define EN_EEPROM_SAVE_INFO       "Save printer settings\nto EEPROM?"
     #define EN_EEPROM_RESTORE_INFO    "Reload settings from\nEEPROM?"
     #define EN_RETRACT_FEEDRATE       "Retract feedrate"
