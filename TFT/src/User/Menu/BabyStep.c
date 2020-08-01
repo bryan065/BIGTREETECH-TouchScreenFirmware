@@ -100,7 +100,7 @@ void menuBabyStep(void)
     {ICON_BACKGROUND,           LABEL_BACKGROUND},
     {ICON_BACKGROUND,           LABEL_BACKGROUND},
     {ICON_INC,                  LABEL_INC},
-    {ICON_BACKGROUND,           LABEL_BACKGROUND},
+    {ICON_EEPROM_SAVE,          LABEL_EEPROM_SAVE},
     {ICON_01_MM,                LABEL_01_MM},
     {ICON_RESET_VALUE,          LABEL_RESET},
     {ICON_BACK,                 LABEL_BACK},}
@@ -154,6 +154,14 @@ void menuBabyStep(void)
 
           mustStoreCmd("M290 Z%.2f\n", max_unit);
           baby_step_value += max_unit;
+        }
+        break;
+      //save change value  
+      case KEY_ICON_4:
+        mustStoreCmd("M851 Z%.2f\n", (orig_z_offset + baby_step_value)); 
+        if (infoMachineSettings.EEPROM == 1)
+        {
+          mustStoreCmd("M500\n");
         }
         break;
 
