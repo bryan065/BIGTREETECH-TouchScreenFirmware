@@ -5,7 +5,7 @@
     #define PL_HEAT                   "Temp."
     #define PL_MOVE                   "Ruch"
     #define PL_HOME                   "Powrót"
-    #define PL_DISABLE_STEPPERS       "Steppers"
+    #define PL_DISABLE_STEPPERS       "Disarm All"
     #define PL_PRINT                  "Druk"
     #define PL_EXTRUDE                "Extrude"
     #define PL_FAN                    "Wentylator"
@@ -203,6 +203,7 @@
     #define PL_PRINT_ACCELERATION     "Print Acceleration"
     #define PL_RETRACT_ACCELERATION   "Retract Acceleration"
     #define PL_TRAVEL_ACCELERATION    "Travel Acceleration"
+    #define PL_JERK                   "Jerk"
     #define PL_BUMP_SENSITIVITY       "TMC bump sensitivity"
     #define PL_FWRETRACT              "FW Retraction"
     #define PL_FWRECOVER              "FW Retraction Recover"
@@ -225,6 +226,7 @@
     #define PL_SETTING_SAVE           "Save settings"
     #define PL_SETTING_RESET          "Reset default settings"
     #define PL_SETTING_RESTORE        "Restore settings"
+    #define PL_EEPROM_SETTINGS        "EEPROM"
     #define PL_EEPROM_SAVE_INFO       "Save printer settings\nto EEPROM?"
     #define PL_EEPROM_RESTORE_INFO    "Reload settings from\nEEPROM?"
     #define PL_EEPROM_RESET_INFO      "Reset EEPROM to stock printer settings?"
@@ -260,5 +262,7 @@
     #define PL_TUNE_EXT_OLD_ESTEP     "Old e-steps: %0.2f"
     #define PL_TUNE_EXT_NEW_ESTEP     "New e-steps: %0.2f"
     #define PL_CONNECTION_SETTINGS    "Connection"
+    #define PL_OFFSET_TOOL            "Offset 2nd Nozzle"
+    #define PL_HYBRID_THRESHOLD       "TMC HybridThreshold"
 
 #endif

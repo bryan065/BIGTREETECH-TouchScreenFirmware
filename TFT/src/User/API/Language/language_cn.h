@@ -203,6 +203,7 @@
     #define CN_PRINT_ACCELERATION     "打印加速度"
     #define CN_RETRACT_ACCELERATION   "回抽加速度"
     #define CN_TRAVEL_ACCELERATION    "空载加速度"
+    #define CN_JERK                   "Jerk"
     #define CN_BUMP_SENSITIVITY       "TMC堵转检测灵敏度"
     #define CN_FWRETRACT              "FW Retraction"
     #define CN_FWRECOVER              "FW Retraction Recover"
@@ -225,6 +226,7 @@
     #define CN_SETTING_SAVE           "保存设置"
     #define CN_SETTING_RESET          "重置设置"
     #define CN_SETTING_RESTORE        "保存设置"
+    #define CN_EEPROM_SETTINGS        "EEPROM"
     #define CN_EEPROM_SAVE_INFO       "是否保存打印机设置到EEPROM?"
     #define CN_EEPROM_RESTORE_INFO    "是否从EEPROM加载设置?"
     #define CN_EEPROM_RESET_INFO      "重置EEPROM到出厂设置?"
@@ -260,5 +262,7 @@
     #define CN_TUNE_EXT_OLD_ESTEP     "旧的E-Steps: %0.2f"
     #define CN_TUNE_EXT_NEW_ESTEP     "新的E-Steps: %0.2f"
     #define CN_CONNECTION_SETTINGS    "连接"
+    #define CN_OFFSET_TOOL            "Offset 2nd Nozzle"
+    #define CN_HYBRID_THRESHOLD       "TMC HybridThreshold"
 
 #endif

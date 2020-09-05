@@ -5,7 +5,7 @@
     #define CA_HEAT                   "Escalfar"
     #define CA_MOVE                   "Moure"
     #define CA_HOME                   "Origen"
-    #define CA_DISABLE_STEPPERS       "Steppers"
+    #define CA_DISABLE_STEPPERS       "Disarm All"
     #define CA_PRINT                  "Imprimir"
     #define CA_EXTRUDE                "Extruir"
     #define CA_FAN                    "Ventilar"
@@ -203,6 +203,7 @@
     #define CA_PRINT_ACCELERATION     "Acceleració Impressió"
     #define CA_RETRACT_ACCELERATION   "Acceleració Retracció"
     #define CA_TRAVEL_ACCELERATION    "Acceleració Viatge"
+    #define CA_JERK                   "Jerk"
     #define CA_BUMP_SENSITIVITY       "Sensibilitat al topall TMC"
     #define CA_FWRETRACT              "Retracció de FW"
     #define CA_FWRECOVER              "Recuperació de Retracció de FW"
@@ -225,6 +226,7 @@
     #define CA_SETTING_SAVE           "Save settings"
     #define CA_SETTING_RESET          "Restableix la configuració"
     #define CA_SETTING_RESTORE        "Restaura la configuració"
+    #define CA_EEPROM_SETTINGS        "EEPROM"
     #define CA_EEPROM_SAVE_INFO       "Desa la configuració de la impressora\na la EEPROM?"
     #define CA_EEPROM_RESTORE_INFO    "Carregar la configuració de\nEEPROM?"
     #define CA_EEPROM_RESET_INFO      "Reset EEPROM to stock printer settings?"
@@ -240,7 +242,7 @@
     #define CA_START_PRINT            "Comenceu a imprimir:\n %s?"
     #define CA_ACK_NOTIFICATION       "ACK notification style"
     #define CA_LEVELING_EDGE_DISTANCE "Bed edge distance"
-    #define CA_XY_UNLOCK              "Unlock XY"
+    #define CA_XY_UNLOCK              "Disarm XY"
     #define CA_TUNING                 "Tuning"
     #define CA_PID                    "PID"
     #define CA_PID_TITLE              "PID autotune"
@@ -260,5 +262,7 @@
     #define CA_TUNE_EXT_OLD_ESTEP     "Old e-steps: %0.2f"
     #define CA_TUNE_EXT_NEW_ESTEP     "New e-steps: %0.2f"
     #define CA_CONNECTION_SETTINGS    "Connection"
-
+    #define CA_OFFSET_TOOL            "Offset 2nd Nozzle"
+    #define CA_HYBRID_THRESHOLD       "TMC HybridThreshold"
+    
 #endif

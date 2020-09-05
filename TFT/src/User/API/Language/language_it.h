@@ -5,7 +5,7 @@
     #define IT_HEAT                   "Riscalda"
     #define IT_MOVE                   "Muovi"
     #define IT_HOME                   "Home"
-    #define IT_DISABLE_STEPPERS       "Steppers"
+    #define IT_DISABLE_STEPPERS       "Disarm All"
     #define IT_PRINT                  "Stampa"
     #define IT_EXTRUDE                "Estrudi"
     #define IT_FAN                    "Ventola"
@@ -203,6 +203,7 @@
     #define IT_PRINT_ACCELERATION     "Print Acceleration"
     #define IT_RETRACT_ACCELERATION   "Retract Acceleration"
     #define IT_TRAVEL_ACCELERATION    "Travel Acceleration"
+    #define IT_JERK                   "Jerk"
     #define IT_BUMP_SENSITIVITY       "TMC bump sensitivity"
     #define IT_FWRETRACT              "FW Retraction"
     #define IT_FWRECOVER              "FW Retraction Recover"
@@ -225,6 +226,7 @@
     #define IT_SETTING_SAVE           "Save settings"
     #define IT_SETTING_RESET          "Reset default settings"
     #define IT_SETTING_RESTORE        "Restore settings"
+    #define IT_EEPROM_SETTINGS        "EEPROM"
     #define IT_EEPROM_SAVE_INFO       "Save printer settings\nto EEPROM?"
     #define IT_EEPROM_RESTORE_INFO    "Reload settings from\nEEPROM?"
     #define IT_EEPROM_RESET_INFO      "Reset EEPROM to stock printer settings?"
@@ -260,5 +262,7 @@
     #define IT_TUNE_EXT_OLD_ESTEP     "Old e-steps: %0.2f"
     #define IT_TUNE_EXT_NEW_ESTEP     "New e-steps: %0.2f"
     #define IT_CONNECTION_SETTINGS    "Connection"
+    #define IT_OFFSET_TOOL            "Offset 2nd Nozzle"
+    #define IT_HYBRID_THRESHOLD       "TMC HybridThreshold"
 
 #endif

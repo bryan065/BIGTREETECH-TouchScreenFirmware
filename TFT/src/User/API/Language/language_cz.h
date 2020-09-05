@@ -203,6 +203,7 @@
     #define CZ_PRINT_ACCELERATION     "Zrychlení při tisku"
     #define CZ_RETRACT_ACCELERATION   "Zrychlení retrakcí"
     #define CZ_TRAVEL_ACCELERATION    "Zrychlení při přesunu"
+    #define CZ_JERK                   "Jerk"
     #define CZ_BUMP_SENSITIVITY       "Citlivost nárazu TMC"
     #define CZ_FWRETRACT              "FW Zatažení"
     #define CZ_FWRECOVER              "FW Obnovení"
@@ -225,6 +226,7 @@
     #define CZ_SETTING_SAVE           "Uložení nastavení"
     #define CZ_SETTING_RESET          "Reset nastavení"
     #define CZ_SETTING_RESTORE        "Obnovení nastavení"
+    #define CZ_EEPROM_SETTINGS        "EEPROM"
     #define CZ_EEPROM_SAVE_INFO       "Uložit nastavení tiskárny\ndo EEPROM?"
     #define CZ_EEPROM_RESTORE_INFO    "Obnovit nastavení \nz EEPROM?"
     #define CZ_EEPROM_RESET_INFO      "Reset EEPROM na výchozí hodnoty?"
@@ -260,5 +262,7 @@
     #define CZ_TUNE_EXT_OLD_ESTEP     "Původní E-kroky: %0.2f"
     #define CZ_TUNE_EXT_NEW_ESTEP     "Nový E-kroky: %0.2f"
     #define CZ_CONNECTION_SETTINGS    "Připojení"
-
+    #define CZ_OFFSET_TOOL            "Offset 2.trysky"
+    #define CZ_HYBRID_THRESHOLD       "TMC Hybridní práh"
+    
 #endif

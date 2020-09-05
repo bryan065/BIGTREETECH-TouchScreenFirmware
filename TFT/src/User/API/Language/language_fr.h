@@ -203,6 +203,7 @@
     #define FR_PRINT_ACCELERATION     "Impression"
     #define FR_RETRACT_ACCELERATION   "Rétraction"
     #define FR_TRAVEL_ACCELERATION    "Déplacements"
+    #define FR_JERK                   "Jerk"
     #define FR_BUMP_SENSITIVITY       "Sensibilité TMC"
     #define FR_FWRETRACT              "Rétraction FW"
     #define FR_FWRECOVER              "Récupération FW"
@@ -225,6 +226,7 @@
     #define FR_SETTING_SAVE           "Sauvegarder les paramètres"
     #define FR_SETTING_RESET          "RAZ des paramètres"
     #define FR_SETTING_RESTORE        "Restaurer les paramètres"
+    #define FR_EEPROM_SETTINGS        "EEPROM"
     #define FR_EEPROM_SAVE_INFO       "Enregistrer les paramètres\ndans l'EEPROM ?"
     #define FR_EEPROM_RESTORE_INFO    "Restaurer les paramètres\nde l'EEPROM ?"
     #define FR_EEPROM_RESET_INFO      "Réinitialiser l'EEPROM\naux paramètres d'origine\nde l'imprimante ?"
@@ -260,5 +262,7 @@
     #define FR_TUNE_EXT_OLD_ESTEP     "Ancien : %0.2f"
     #define FR_TUNE_EXT_NEW_ESTEP     "Nouveau : %0.2f"
     #define FR_CONNECTION_SETTINGS    "Connexion"
+    #define FR_OFFSET_TOOL            "Offset 2nd Nozzle"
+    #define FR_HYBRID_THRESHOLD       "TMC HybridThreshold"
 
 #endif
